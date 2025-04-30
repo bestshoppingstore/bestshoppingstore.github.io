@@ -20,27 +20,45 @@
     h1 {
       margin: 0;
     }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #FF6347;
+    }
     .categories {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
       margin: 40px auto;
-      max-width: 1000px;
+      max-width: 1200px;
     }
     .category {
-      background: white;
+      background: #ffffff;
       border-radius: 10px;
-      margin: 15px;
-      padding: 30px 50px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s;
       text-decoration: none;
       color: #333;
       font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid transparent;
+      padding: 30px;
     }
     .category:hover {
       transform: scale(1.05);
       background-color: #eef6ff;
+      border-color: #FF6347;
+      color: #FF6347;
+    }
+    .category a {
+      color: #333;
+      text-decoration: none;
+    }
+    .category:hover a {
+      color: #FF6347;
     }
   </style>
 </head>
@@ -48,7 +66,7 @@
 
 <header>
   <h1>Best Shopping Store</h1>
-  <p>Top Categories – Powered by Amazon</p>
+  <p>Welcome to Alham Afghan's page! You can find all types of products through our page. If you have any issues, we are here to help!</p>
 </header>
 
 <div class="categories">
@@ -57,6 +75,21 @@
   <a class="category" href="https://www.amazon.com/s?k=technology&tag=bestshopp0cd1-20" target="_blank">Technology</a>
   <a class="category" href="https://www.amazon.com/s?k=sports&tag=bestshopp0cd1-20" target="_blank">Sports Products</a>
   <a class="category" href="https://www.amazon.com/s?k=home&tag=bestshopp0cd1-20" target="_blank">Home Products</a>
+  <a class="category" href="https://www.amazon.com/s?k=beauty&tag=bestshopp0cd1-20" target="_blank">Beauty</a>
+  <a class="category" href="https://www.amazon.com/s?k=kitchen&tag=bestshopp0cd1-20" target="_blank">Kitchen</a>
+  <a class="category" href="https://www.amazon.com/s?k=books&tag=bestshopp0cd1-20" target="_blank">Books</a>
+  <a class="category" href="https://www.amazon.com/s?k=toys&tag=bestshopp0cd1-20" target="_blank">Toys</a>
+  <a class="category" href="https://www.amazon.com/s?k=electronics&tag=bestshopp0cd1-20" target="_blank">Electronics</a>
+  <a class="category" href="https://www.amazon.com/s?k=appliances&tag=bestshopp0cd1-20" target="_blank">Appliances</a>
+  <a class="category" href="https://www.amazon.com/s?k=music&tag=bestshopp0cd1-20" target="_blank">Music</a>
+  <a class="category" href="https://www.amazon.com/s?k=shoes&tag=bestshopp0cd1-20" target="_blank">Shoes</a>
+  <a class="category" href="https://www.amazon.com/s?k=computers&tag=bestshopp0cd1-20" target="_blank">Computers</a>
+  <a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20" target="_blank">Video Games</a>
+  <a class="category" href="https://www.amazon.com/s?k=automotive&tag=bestshopp0cd1-20" target="_blank">Automotive</a>
+  <a class="category" href="https://www.amazon.com/s?k=office&tag=bestshopp0cd1-20" target="_blank">Office Supplies</a>
+  <a class="category" href="https://www.amazon.com/s?k=garden&tag=bestshopp0cd1-20" target="_blank">Garden</a>
+  <a class="category" href="https://www.amazon.com/s?k=food&tag=bestshopp0cd1-20" target="_blank">Food</a>
+  <a class="category" href="https://www.amazon.com/s?k=pet+supplies&tag=bestshopp0cd1-20" target="_blank">Pet Supplies</a>
 </div>
 
 </body>
