@@ -79,6 +79,27 @@
      border-radius: 50%;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+      .Search Box with Suggestions{
+              border: 1px solid #ccc;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+      position: absolute;
+      background: #fff;
+      z-index: 999;
+      width: 200px;
+    }
+
+    #suggestions div {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    #suggestions div:hover {
+      background-color: #f0f0f0;
+    }
+    
+    }
     footer {
       background-color: #0073e6;
       color: white;
@@ -501,6 +522,44 @@
 <!-- fb button -->
 <a href="https://www.facebook.com/profile.php?id=61575762930696" target="_blank" class="fb-button"></a>
 </a>
+  <input type="text" id="searchBox" placeholder="Search..." autocomplete="off" onkeyup="showSuggestions(this.value)">
+<div id="suggestions"></div>
+<script>
+  const categories = [
+    "Fashion", "Health", "Technology", "Sports", "Home",
+    "Beauty", "Toys", "Electronics", "Books", "Shoes", "Clothing"
+  ];
 
+  function showSuggestions(value) {
+    const suggestionBox = document.getElementById("suggestions");
+    suggestionBox.innerHTML = "";
+    if (value.length === 0) {
+      suggestionBox.style.display = "none";
+      return;
+    }
+
+    const matches = categories.filter(c =>
+      c.toLowerCase().startsWith(value.toLowerCase())
+    );
+
+    if (matches.length === 0) {
+      suggestionBox.style.display = "none";
+      return;
+    }
+
+    matches.forEach(item => {
+      const div = document.createElement("div");
+      div.textContent = item;
+      div.onclick = () => {
+        document.getElementById("searchBox").value = item;
+        suggestionBox.style.display = "none";
+        window.location.href = `https://www.amazon.com/s?k=${item}&tag=bestshopp0cd1-20`;
+      };
+      suggestionBox.appendChild(div);
+    });
+
+    suggestionBox.style.display = "block";
+  }
+</script>
 </body>
 </html>
