@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore a wide range of products at Best Shopping Store, powered by Amazon. Your trusted marketplace for fashion, electronics, home goods, and more." />
   <title>Best Shopping Store</title>
   <style>
     body {
@@ -79,15 +80,12 @@
       border-radius: 50%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
-    /* Search suggestions style */
     #searchBox {
       margin-top: 30px;
       padding: 10px;
       font-size: 16px;
       width: 220px;
     }
-
     #suggestions {
       border: 1px solid #ccc;
       max-height: 150px;
@@ -102,31 +100,25 @@
       left: 0;
       right: 0;
     }
-
     #suggestions div {
       padding: 8px;
       cursor: pointer;
     }
-
     #suggestions div:hover {
       background-color: #f0f0f0;
     }
-
     footer {
       background-color: #0073e6;
       color: white;
       padding: 20px 0;
     }
-
     .share-buttons {
       margin-top: 20px;
     }
-
     .share-buttons h3 {
       color: white;
       margin-bottom: 15px;
     }
-
     .share-buttons .btn {
       display: inline-block;
       margin: 5px 10px;
@@ -137,446 +129,463 @@
       color: white;
       transition: background 0.3s ease;
     }
-
     .fb { background: #3b5998; }
     .fb:hover { background: #2d4373; }
-
     .tw { background: #1da1f2; }
     .tw:hover { background: #0d95e8; }
-
     .wa { background: #25D366; }
     .wa:hover { background: #1ebe57; }
-
     .tg { background: #0088cc; }
     .tg:hover { background: #0077b5; }
-
     .ig { background: #C13584; }
     .ig:hover { background: #962c6b; }
-
     .yt { background: #FF0000; }
     .yt:hover { background: #e60000; }
-
-    .em { background: #6c757d; }
+    .em {ॐ background: #6c757d; }
     .em:hover { background: #5a6268; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Best Shopping Store</h1>
+    <p class="subtitle">Welcome to Alham Afghan Page – Your Trusted Marketplace, Powered by Amazon</p>
+  </header>
 
-<header>
-  <h1>Best Shopping Store</h1>
-  <p class="subtitle">"Welcome to Alham Afghan Page – Your Trusted Marketplace, Powered by Amazon"</p>
-</header>
+  <div class="intro">
+    Explore a wide range of products on our page. If you encounter any issues, we're here to assist you in resolving them!
+  </div>
 
-<div class="intro">
-  "Explore a wide range of products on our page. If you encounter any issues, we're here to assist you in resolving them!"
-</div>
+  <input type="text" id="searchBox" placeholder="Search..." autocomplete="off" onkeyup="showSuggestions(this.value)">
+  <div id="suggestions"></div>
 
-<div class="categories">
-<a class="category" href="https://www.amazon.com/s?k=fashion&tag=bestshopp0cd1-20">Fashion</a>
-<a class="category" href="https://www.amazon.com/s?k=health&tag=bestshopp0cd1-20">Health</a>
-<a class="category" href="https://www.amazon.com/s?k=technology&tag=bestshopp0cd1-20">Technology</a>
-<a class="category" href="https://www.amazon.com/s?k=sports&tag=bestshopp0cd1-20">Sports</a>
-<a class="category" href="https://www.amazon.com/s?k=home&tag=bestshopp0cd1-20">Home</a>
-<a class="category" href="https://www.amazon.com/s?k=beauty&tag=bestshopp0cd1-20">Beauty</a>
-<a class="category" href="https://www.amazon.com/s?k=toys&tag=bestshopp0cd1-20">Toys</a>
-<a class="category" href="https://www.amazon.com/s?k=electronics&tag=bestshopp0cd1-20">Electronics</a>
-<a class="category" href="https://www.amazon.com/s?k=books&tag=bestshopp0cd1-20">Books</a>
-<a class="category" href="https://www.amazon.com/s?k=shoes&tag=bestshopp0cd1-20">Shoes</a>
-<a class="category" href="https://www.amazon.com/s?k=clothing&tag=bestshopp0cd1-20">Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=toys+games&tag=bestshopp0cd1-20">Toys & Games</a>
-<a class="category" href="https://www.amazon.com/s?k=home+improvement&tag=bestshopp0cd1-20">Home Improvement</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchen+appliances&tag=bestshopp0cd1-20">Kitchen Appliances</a>
-<a class="category" href="https://www.amazon.com/s?k=gardening&tag=bestshopp0cd1-20">Gardening</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+gear&tag=bestshopp0cd1-20">Outdoor Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=healthcare&tag=bestshopp0cd1-20">Healthcare</a>
-<a class="category" href="https://www.amazon.com/s?k=toiletries&tag=bestshopp0cd1-20">Toiletries</a>
-<a class="category" href="https://www.amazon.com/s?k=baby+products&tag=bestshopp0cd1-20">Baby Products</a>
-<a class="category" href="https://www.amazon.com/s?k=sports+nutrition&tag=bestshopp0cd1-20">Sports Nutrition</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture&tag=bestshopp0cd1-20">Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20">Video Games</a>
-<a class="category" href="https://www.amazon.com/s?k=automotive&tag=bestshopp0cd1-20">Automotive</a>
-<a class="category" href="https://www.amazon.com/s?k=music&tag=bestshopp0cd1-20">Music</a>
-<a class="category" href="https://www.amazon.com/s?k=pet+supplies&tag=bestshopp0cd1-20">Pet Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=toys+and+games&tag=bestshopp0cd1-20">Toys and Games</a>
-<a class="category" href="https://www.amazon.com/s?k=arts+and+crafts&tag=bestshopp0cd1-20">Arts & Crafts</a>
-<a class="category" href="https://www.amazon.com/s?k=luggage&tag=bestshopp0cd1-20">Luggage</a>
-<a class="category" href="https://www.amazon.com/s?k=musical+instruments&tag=bestshopp0cd1-20">Musical Instruments</a>
-<a class="category" href="https://www.amazon.com/s?k=toys&tag=bestshopp0cd1-20">Toys</a>
-<a class="category" href="https://www.amazon.com/s?k=home+decor&tag=bestshopp0cd1-20">Home Decor</a>
-<a class="category" href="https://www.amazon.com/s?k=handmade&tag=bestshopp0cd1-20">Handmade</a>
-<a class="category" href="https://www.amazon.com/s?k=cosmetics&tag=bestshopp0cd1-20">Cosmetics</a>
-<a class="category" href="https://www.amazon.com/s?k=software&tag=bestshopp0cd1-20">Software</a>
-<a class="category" href="https://www.amazon.com/s?k=personal+care&tag=bestshopp0cd1-20">Personal Care</a>
-<a class="category" href="https://www.amazon.com/s?k=photography&tag=bestshopp0cd1-20">Photography</a>
-<a class="category" href="https://www.amazon.com/s?k=musical+instruments&tag=bestshopp0cd1-20">Musical Instruments</a>
-<a class="category" href="https://www.amazon.com/s?k=garden+tools&tag=bestshopp0cd1-20">Garden Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=health+care+products&tag=bestshopp0cd1-20">Health Care Products</a>
-<a class="category" href="https://www.amazon.com/s?k=baking&tag=bestshopp0cd1-20">Baking</a>
-<a class="category" href="https://www.amazon.com/s?k=watch+accessories&tag=bestshopp0cd1-20">Watch Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=luxury+goods&tag=bestshopp0cd1-20">Luxury Goods</a>
-<a class="category" href="https://www.amazon.com/s?k=craft+supplies&tag=bestshopp0cd1-20">Craft Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=cleaning+supplies&tag=bestshopp0cd1-20">Cleaning Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=party+supply&tag=bestshopp0cd1-20">Party Supply</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+recreation&tag=bestshopp0cd1-20">Outdoor Recreation</a>
-<a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20">Video Games</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+equipment&tag=bestshopp0cd1-20">Fitness Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=home+and+kitchen&tag=bestshopp0cd1-20">Home & Kitchen</a>
-<a class="category" href="https://www.amazon.com/s?k=small+appliances&tag=bestshopp0cd1-20">Small Appliances</a>
-<a class="category" href="https://www.amazon.com/s?k=health+care&tag=bestshopp0cd1-20">Health Care</a>
-<a class="category" href="https://www.amazon.com/s?k=skincare&tag=bestshopp0cd1-20">Skincare</a>
-<a class="category" href="https://www.amazon.com/s?k=antiques&tag=bestshopp0cd1-20">Antiques</a>
-<a class="category" href="https://www.amazon.com/s?k=batteries&tag=bestshopp0cd1-20">Batteries</a>
-<a class="category" href="https://www.amazon.com/s?k=musical+accessories&tag=bestshopp0cd1-20">Musical Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=gifts&tag=bestshopp0cd1-20">Gifts</a>
-<a class="category" href="https://www.amazon.com/s?k=notebooks&tag=bestshopp0cd1-20">Notebooks</a>
-<a class="category" href="https://www.amazon.com/s?k=jewelry&tag=bestshopp0cd1-20">Jewelry</a>
-<a class="category" href="https://www.amazon.com/s?k=personalized+gifts&tag=bestshopp0cd1-20">Personalized Gifts</a>
-<a class="category" href="https://www.amazon.com/s?k=car+accessories&tag=bestshopp0cd1-20">Car Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=travel+gear&tag=bestshopp0cd1-20">Travel Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchenware&tag=bestshopp0cd1-20">Kitchenware</a>
-<a class="category" href="https://www.amazon.com/s?k=lawn+and+garden&tag=bestshopp0cd1-20">Lawn & Garden</a>
-<a class="category" href="https://www.amazon.com/s?k=business+and+industrial&tag=bestshopp0cd1-20">Business & Industrial</a>
-<a class="category" href="https://www.amazon.com/s?k=toys+for+babies&tag=bestshopp0cd1-20">Toys for Babies</a>
-<a class="category" href="https://www.amazon.com/s?k=high-tech&tag=bestshopp0cd1-20">High-Tech</a>
-<a class="category" href="https://www.amazon.com/s?k=alcohol&tag=bestshopp0cd1-20">Alcohol</a>
-<a class="category" href="https://www.amazon.com/s?k=drinks&tag=bestshopp0cd1-20">Drinks</a>
-<a class="category" href="https://www.amazon.com/s?k=sporting+goods&tag=bestshopp0cd1-20">Sporting Goods</a>
-<a class="category" href="https://www.amazon.com/s?k=gift+cards&tag=bestshopp0cd1-20">Gift Cards</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+gadgets&tag=bestshopp0cd1-20">Fitness Gadgets</a>
-<a class="category" href="https://www.amazon.com/s?k=water+sports&tag=bestshopp0cd1-20">Water Sports</a>
-<a class="category" href="https://www.amazon.com/s?k=cycling&tag=bestshopp0cd1-20">Cycling</a>
-<a class="category" href="https://www.amazon.com/s?k=camping&tag=bestshopp0cd1-20">Camping</a>
-<a class="category" href="https://www.amazon.com/s?k=ice+cream+makers&tag=bestshopp0cd1-20">Ice Cream Makers</a>
-<a class="category" href="https://www.amazon.com/s?k=pets&tag=bestshopp0cd1-20">Pets</a>
-<a class="category" href="https://www.amazon.com/s?k=farming+supplies&tag=bestshopp0cd1-20">Farming Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=handbags&tag=bestshopp0cd1-20">Handbags</a>
-<a class="category" href="https://www.amazon.com/s?k=tech+gadgets&tag=bestshopp0cd1-20">Tech Gadgets</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=cosmetic+tools&tag=bestshopp0cd1-20">Cosmetic Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=smartphones&tag=bestshopp0cd1-20">Smartphones</a>
-<a class="category" href="https://www.amazon.com/s?k=laptops&tag=bestshopp0cd1-20">Laptops</a>
-<a class="category" href="https://www.amazon.com/s?k=gaming+consoles&tag=bestshopp0cd1-20">Gaming Consoles</a>
-<a class="category" href="https://www.amazon.com/s?k=computer+components&tag=bestshopp0cd1-20">Computer Components</a>
-<a class="category" href="https://www.amazon.com/s?k=accessories&tag=bestshopp0cd1-20">Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=lighting&tag=bestshopp0cd1-20">Lighting</a>
-<a class="category" href="https://www.amazon.com/s?k=decor&tag=bestshopp0cd1-20">Decor</a>
-<a class="category" href="https://www.amazon.com/s?k=photography+equipment&tag=bestshopp0cd1-20">Photography Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=garden+tools&tag=bestshopp0cd1-20">Garden Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=christmas+decorations&tag=bestshopp0cd1-20">Christmas Decorations</a>
-<a class="category" href="https://www.amazon.com/s?k=stationery&tag=bestshopp0cd1-20">Stationery</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchen+storage&tag=bestshopp0cd1-20">Kitchen Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=souvenirs&tag=bestshopp0cd1-20">Souvenirs</a>
-<a class="category" href="https://www.amazon.com/s?k=cleaning+supplies&tag=bestshopp0cd1-20">Cleaning Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=vacuum+cleaners&tag=bestshopp0cd1-20">Vacuum Cleaners</a>
-<a class="category" href="https://www.amazon.com/s?k=home+improvement&tag=bestshopp0cd1-20">Home Improvement</a>
-<a class="category" href="https://www.amazon.com/s?k=bedding&tag=bestshopp0cd1-20">Bedding</a>
-<a class="category" href="https://www.amazon.com/s?k=children+clothes&tag=bestshopp0cd1-20">Children Clothes</a>
-<a class="category" href="https://www.amazon.com/s?k=bedroom+furniture&tag=bestshopp0cd1-20">Bedroom Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=toiletries&tag=bestshopp0cd1-20">Toiletries</a>
-<a class="category" href="https://www.amazon.com/s?k=appliances&tag=bestshopp0cd1-20">Appliances</a>
-<a class="category" href="https://www.amazon.com/s?k=shoes&tag=bestshopp0cd1-20">Shoes</a>
-<a class="category" href="https://www.amazon.com/s?k=coats&tag=bestshopp0cd1-20">Coats</a>
-<a class="category" href="https://www.amazon.com/s?k=blenders&tag=bestshopp0cd1-20">Blenders</a>
-<a class="category" href="https://www.amazon.com/s?k=earphones&tag=bestshopp0cd1-20">Earphones</a>
-<a class="category" href="https://www.amazon.com/s?k=smart+home&tag=bestshopp0cd1-20">Smart Home</a>
-<a class="category" href="https://www.amazon.com/s?k=stylish+clothing&tag=bestshopp0cd1-20">Stylish Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=cameras&tag=bestshopp0cd1-20">Cameras</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture+for+living+room&tag=bestshopp0cd1-20">Furniture for Living Room</a>
-<a class="category" href="https://www.amazon.com/s?k=nutrition&tag=bestshopp0cd1-20">Nutrition</a>
-<a class="category" href="https://www.amazon.com/s?k=tools&tag=bestshopp0cd1-20">Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=health+monitoring&tag=bestshopp0cd1-20">Health Monitoring</a>
-<a class="category" href="https://www.amazon.com/s?k=photography+backdrops&tag=bestshopp0cd1-20">Photography Backdrops</a>
-<a class="category" href="https://www.amazon.com/s?k=storage+solutions&tag=bestshopp0cd1-20">Storage Solutions</a>
-<a class="category" href="https://www.amazon.com/s?k=books+for+kids&tag=bestshopp0cd1-20">Books for Kids</a>
-<a class="category" href="https://www.amazon.com/s?k=gaming+chairs&tag=bestshopp0cd1-20">Gaming Chairs</a>
-<a class="category" href="https://www.amazon.com/s?k=college+bags&tag=bestshopp0cd1-20">College Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=art+supplies&tag=bestshopp0cd1-20">Art Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=home+office+furniture&tag=bestshopp0cd1-20">Home Office Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=televisions&tag=bestshopp0cd1-20">Televisions</a>
-<a class="category" href="https://www.amazon.com/s?k=clocks&tag=bestshopp0cd1-20">Clocks</a>
-<a class="category" href="https://www.amazon.com/s?k=luggage&tag=bestshopp0cd1-20">Luggage</a>
-<a class="category" href="https://www.amazon.com/s?k=kids+toys&tag=bestshopp0cd1-20">Kids Toys</a>
-<a class="category" href="https://www.amazon.com/s?k=smartwatches&tag=bestshopp0cd1-20">Smartwatches</a>
-<a class="category" href="https://www.amazon.com/s?k=grills&tag=bestshopp0cd1-20">Grills</a>
-<a class="category" href="https://www.amazon.com/s?k=pantry+essentials&tag=bestshopp0cd1-20">Pantry Essentials</a>
-<a class="category" href="https://www.amazon.com/s?k=office+supplies&tag=bestshopp0cd1-20">Office Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=air+purifiers&tag=bestshopp0cd1-20">Air Purifiers</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+tracking&tag=bestshopp0cd1-20">Fitness Tracking</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+gear&tag=bestshopp0cd1-20">Outdoor Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=aprons&tag=bestshopp0cd1-20">Aprons</a>
-<a class="category" href="https://www.amazon.com/s?k=bath+furnishings&tag=bestshopp0cd1-20">Bath Furnishings</a>
-<a class="category" href="https://www.amazon.com/s?k=water+filters&tag=bestshopp0cd1-20">Water Filters</a>
-<a class="category" href="https://www.amazon.com/s?k=power+tools&tag=bestshopp0cd1-20">Power Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=auto+repair+tools&tag=bestshopp0cd1-20">Auto Repair Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=baby+monitors&tag=bestshopp0cd1-20">Baby Monitors</a>
-<a class="category" href="https://www.amazon.com/s?k=business+cards&tag=bestshopp0cd1-20">Business Cards</a>
-<a class="category" href="https://www.amazon.com/s?k=wristwatches&tag=bestshopp0cd1-20">Wristwatches</a>
-<a class="category" href="https://www.amazon.com/s?k=health+supplements&tag=bestshopp0cd1-20">Health Supplements</a>
-<a class="category" href="https://www.amazon.com/s?k=hair+tools&tag=bestshopp0cd1-20">Hair Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=air+conditioners&tag=bestshopp0cd1-20">Air Conditioners</a>
-<a class="category" href="https://www.amazon.com/s?k=auto+parts&tag=bestshopp0cd1-20">Auto Parts</a>
-<a class="category" href="https://www.amazon.com/s?k=storage+bins&tag=bestshopp0cd1-20">Storage Bins</a>
-<a class="category" href="https://www.amazon.com/s?k=toothbrushes&tag=bestshopp0cd1-20">Toothbrushes</a>
-<a class="category" href="https://www.amazon.com/s?k=cleaning+equipment&tag=bestshopp0cd1-20">Cleaning Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=exercise+balls&tag=bestshopp0cd1-20">Exercise Balls</a>
-<a class="category" href="https://www.amazon.com/s?k=health+and+wellness&tag=bestshopp0cd1-20">Health & Wellness</a>
-<a class="category" href="https://www.amazon.com/s?k=vacuum+bags&tag=bestshopp0cd1-20">Vacuum Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=baby+clothes&tag=bestshopp0cd1-20">Baby Clothes</a>
-<a class="category" href="https://www.amazon.com/s?k=food+storage&tag=bestshopp0cd1-20">Food Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=iron+boards&tag=bestshopp0cd1-20">Iron Boards</a>
-<a class="category" href="https://www.amazon.com/s?k=backpacks&tag=bestshopp0cd1-20">Backpacks</a>
-<a class="category" href="https://www.amazon.com/s?k=drone+accessories&tag=bestshopp0cd1-20">Drone Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=car+electronics&tag=bestshopp0cd1-20">Car Electronics</a>
-<a class="category" href="https://www.amazon.com/s?k=lawn+mowers&tag=bestshopp0cd1-20">Lawn Mowers</a>
-<a class="category" href="https://www.amazon.com/s?k=power+banks&tag=bestshopp0cd1-20">Power Banks</a>
-<a class="category" href="https://www.amazon.com/s?k=bedroom+furniture&tag=bestshopp0cd1-20">Bedroom Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=car+maintenance&tag=bestshopp0cd1-20">Car Maintenance</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+clothing&tag=bestshopp0cd1-20">Outdoor Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+play&tag=bestshopp0cd1-20">Outdoor Play</a>
-<a class="category" href="https://www.amazon.com/s?k=beverages&tag=bestshopp0cd1-20">Beverages</a>
-<a class="category" href="https://www.amazon.com/s?k=blankets&tag=bestshopp0cd1-20">Blankets</a>
-<a class="category" href="https://www.amazon.com/s?k=lawn+care&tag=bestshopp0cd1-20">Lawn Care</a>
-<a class="category" href="https://www.amazon.com/s?k=heating+and+cooling&tag=bestshopp0cd1-20">Heating & Cooling</a>
-<a class="category" href="https://www.amazon.com/s?k=household+cleaning&tag=bestshopp0cd1-20">Household Cleaning</a>
-<a class="category" href="https://www.amazon.com/s?k=tools+for+women&tag=bestshopp0cd1-20">Tools for Women</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture+storage&tag=bestshopp0cd1-20">Furniture Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=hair+removal&tag=bestshopp0cd1-20">Hair Removal</a>
-<a class="category" href="https://www.amazon.com/s?k=women+clothing&tag=bestshopp0cd1-20">Women Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=office+decor&tag=bestshopp0cd1-20">Office Decor</a>
-<a class="category" href="https://www.amazon.com/s?k=food+delivery+services&tag=bestshopp0cd1-20">Food Delivery Services</a>
-<a class="category" href="https://www.amazon.com/s?k=coffee+makers&tag=bestshopp0cd1-20">Coffee Makers</a>
-<a class="category" href="https://www.amazon.com/s?k=appliances+repair&tag=bestshopp0cd1-20">Appliances Repair</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=clothing+accessories&tag=bestshopp0cd1-20">Clothing Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=hair+care&tag=bestshopp0cd1-20">Hair Care</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture&tag=bestshopp0cd1-20">Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=restaurant+supplies&tag=bestshopp0cd1-20">Restaurant Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=barbecue+grills&tag=bestshopp0cd1-20">Barbecue Grills</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+gear&tag=bestshopp0cd1-20">Outdoor Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=aprons&tag=bestshopp0cd1-20">Aprons</a>
-<a class="category" href="https://www.amazon.com/s?k=bath+furnishings&tag=bestshopp0cd1-20">Bath Furnishings</a>
-<a class="category" href="https://www.amazon.com/s?k=water+filters&tag=bestshopp0cd1-20">Water Filters</a>
-<a class="category" href="https://www.amazon.com/s?k=power+tools&tag=bestshopp0cd1-20">Power Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=auto+repair+tools&tag=bestshopp0cd1-20">Auto Repair Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=baby+monitors&tag=bestshopp0cd1-20">Baby Monitors</a>
-<a class="category" href="https://www.amazon.com/s?k=business+cards&tag=bestshopp0cd1-20">Business Cards</a>
-<a class="category" href="https://www.amazon.com/s?k=wristwatches&tag=bestshopp0cd1-20">Wristwatches</a>
-<a class="category" href="https://www.amazon.com/s?k=health+supplements&tag=bestshopp0cd1-20">Health Supplements</a>
-<a class="category" href="https://www.amazon.com/s?k=hair+tools&tag=bestshopp0cd1-20">Hair Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=air+conditioners&tag=bestshopp0cd1-20">Air Conditioners</a>
-<a class="category" href="https://www.amazon.com/s?k=auto+parts&tag=bestshopp0cd1-20">Auto Parts</a>
-<a class="category" href="https://www.amazon.com/s?k=storage+bins&tag=bestshopp0cd1-20">Storage Bins</a>
-<a class="category" href="https://www.amazon.com/s?k=toothbrushes&tag=bestshopp0cd1-20">Toothbrushes</a>
-<a class="category" href="https://www.amazon.com/s?k=cleaning+equipment&tag=bestshopp0cd1-20">Cleaning Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=exercise+balls&tag=bestshopp0cd1-20">Exercise Balls</a>
-<a class="category" href="https://www.amazon.com/s?k=health+and+wellness&tag=bestshopp0cd1-20">Health & Wellness</a>
-<a class="category" href="https://www.amazon.com/s?k=vacuum+bags&tag=bestshopp0cd1-20">Vacuum Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=baby+clothes&tag=bestshopp0cd1-20">Baby Clothes</a>
-<a class="category" href="https://www.amazon.com/s?k=food+storage&tag=bestshopp0cd1-20">Food Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=iron+boards&tag=bestshopp0cd1-20">Iron Boards</a>
-<a class="category" href="https://www.amazon.com/s?k=backpacks&tag=bestshopp0cd1-20">Backpacks</a>
-<a class="category" href="https://www.amazon.com/s?k=drone+accessories&tag=bestshopp0cd1-20">Drone Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=car+electronics&tag=bestshopp0cd1-20">Car Electronics</a>
-<a class="category" href="https://www.amazon.com/s?k=lawn+mowers&tag=bestshopp0cd1-20">Lawn Mowers</a>
-<a class="category" href="https://www.amazon.com/s?k=power+banks&tag=bestshopp0cd1-20">Power Banks</a>
-<a class="category" href="https://www.amazon.com/s?k=bedroom+furniture&tag=bestshopp0cd1-20">Bedroom Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=car+maintenance&tag=bestshopp0cd1-20">Car Maintenance</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+clothing&tag=bestshopp0cd1-20">Outdoor Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+play&tag=bestshopp0cd1-20">Outdoor Play</a>
-<a class="category" href="https://www.amazon.com/s?k=beverages&tag=bestshopp0cd1-20">Beverages</a>
-<a class="category" href="https://www.amazon.com/s?k=blankets&tag=bestshopp0cd1-20">Blankets</a>
-<a class="category" href="https://www.amazon.com/s?k=lawn+care&tag=bestshopp0cd1-20">Lawn Care</a>
-<a class="category" href="https://www.amazon.com/s?k=heating+and+cooling&tag=bestshopp0cd1-20">Heating & Cooling</a>
-<a class="category" href="https://www.amazon.com/s?k=household+cleaning&tag=bestshopp0cd1-20">Household Cleaning</a>
-<a class="category" href="https://www.amazon.com/s?k=tools+for+women&tag=bestshopp0cd1-20">Tools for Women</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture+storage&tag=bestshopp0cd1-20">Furniture Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=hair+removal&tag=bestshopp0cd1-20">Hair Removal</a>
-<a class="category" href="https://www.amazon.com/s?k=women+clothing&tag=bestshopp0cd1-20">Women Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=office+decor&tag=bestshopp0cd1-20">Office Decor</a>
-<a class="category" href="https://www.amazon.com/s?k=food+delivery+services&tag=bestshopp0cd1-20">Food Delivery Services</a>
-<a class="category" href="https://www.amazon.com/s?k=coffee+makers&tag=bestshopp0cd1-20">Coffee Makers</a>
-<a class="category" href="https://www.amazon.com/s?k=appliances+repair&tag=bestshopp0cd1-20">Appliances Repair</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=clothing+accessories&tag=bestshopp0cd1-20">Clothing Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=hair+care&tag=bestshopp0cd1-20">Hair Care</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture&tag=bestshopp0cd1-20">Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=restaurant+supplies&tag=bestshopp0cd1-20">Restaurant Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=barbecue+grills&tag=bestshopp0cd1-20">Barbecue Grills</a>
-<a class="category" href="https://www.amazon.com/s?k=home+improvement&tag=bestshopp0cd1-20">Home Improvement</a>
-<a class="category" href="https://www.amazon.com/s?k=vacuum+cleaners&tag=bestshopp0cd1-20">Vacuum Cleaners</a>
-<a class="category" href="https://www.amazon.com/s?k=ceiling+fans&tag=bestshopp0cd1-20">Ceiling Fans</a>
-<a class="category" href="https://www.amazon.com/s?k=wall+art&tag=bestshopp0cd1-20">Wall Art</a>
-<a class="category" href="https://www.amazon.com/s?k=home+theater&tag=bestshopp0cd1-20">Home Theater</a>
-<a class="category" href="https://www.amazon.com/s?k=toy+storage&tag=bestshopp0cd1-20">Toy Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=office+furniture&tag=bestshopp0cd1-20">Office Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=party+supply&tag=bestshopp0cd1-20">Party Supply</a>
-<a class="category" href="https://www.amazon.com/s?k=travel+gear&tag=bestshopp0cd1-20">Travel Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=desk+lamps&tag=bestshopp0cd1-20">Desk Lamps</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchen+appliances&tag=bestshopp0cd1-20">Kitchen Appliances</a>
-<a class="category" href="https://www.amazon.com/s?k=light+fixtures&tag=bestshopp0cd1-20">Light Fixtures</a>
-<a class="category" href="https://www.amazon.com/s?k=personal+care&tag=bestshopp0cd1-20">Personal Care</a>
-<a class="category" href="https://www.amazon.com/s?k=computer+accessories&tag=bestshopp0cd1-20">Computer Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=bike+accessories&tag=bestshopp0cd1-20">Bike Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=exercise+equipment&tag=bestshopp0cd1-20">Exercise Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+equipment&tag=bestshopp0cd1-20">Fitness Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=garden+tools&tag=bestshopp0cd1-20">Garden Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=skincare+products&tag=bestshopp0cd1-20">Skincare Products</a>
-<a class="category" href="https://www.amazon.com/s?k=house+cleaning&tag=bestshopp0cd1-20">House Cleaning</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+clothing&tag=bestshopp0cd1-20">Fitness Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=luggage&tag=bestshopp0cd1-20">Luggage</a>
-<a class="category" href="https://www.amazon.com/s?k=space+saver+bags&tag=bestshopp0cd1-20">Space Saver Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=audio+equipment&tag=bestshopp0cd1-20">Audio Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=solar+panels&tag=bestshopp0cd1-20">Solar Panels</a>
-<a class="category" href="https://www.amazon.com/s?k=garden+furniture&tag=bestshopp0cd1-20">Garden Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=craft+supplies&tag=bestshopp0cd1-20">Craft Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=camping+gear&tag=bestshopp0cd1-20">Camping Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=swimwear&tag=bestshopp0cd1-20">Swimwear</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchen+tools&tag=bestshopp0cd1-20">Kitchen Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=diapering+supplies&tag=bestshopp0cd1-20">Diapering Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=men+clothing&tag=bestshopp0cd1-20">Men Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=women+shoes&tag=bestshopp0cd1-20">Women Shoes</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture+upholstery&tag=bestshopp0cd1-20">Furniture Upholstery</a>
-<a class="category" href="https://www.amazon.com/s?k=home+depot+tools&tag=bestshopp0cd1-20">Home Depot Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+lighting&tag=bestshopp0cd1-20">Outdoor Lighting</a>
-<a class="category" href="https://www.amazon.com/s?k=bathroom+accessories&tag=bestshopp0cd1-20">Bathroom Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=grilling+tools&tag=bestshopp0cd1-20">Grilling Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=handbags&tag=bestshopp0cd1-20">Handbags</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+bands&tag=bestshopp0cd1-20">Fitness Bands</a>
-<a class="category" href="https://www.amazon.com/s?k=cleaning+supplies&tag=bestshopp0cd1-20">Cleaning Supplies</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+heaters&tag=bestshopp0cd1-20">Outdoor Heaters</a>
-<a class="category" href="https://www.amazon.com/s?k=sporting+goods&tag=bestshopp0cd1-20">Sporting Goods</a>
-<a class="category" href="https://www.amazon.com/s?k=biking+gear&tag=bestshopp0cd1-20">Biking Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=desk+organizers&tag=bestshopp0cd1-20">Desk Organizers</a>
-<a class="category" href="https://www.amazon.com/s?k=vacuum+cleaner+bags&tag=bestshopp0cd1-20">Vacuum Cleaner Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+storage&tag=bestshopp0cd1-20">Outdoor Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=safety+equipment&tag=bestshopp0cd1-20">Safety Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=earphones&tag=bestshopp0cd1-20">Earphones</a>
-<a class="category" href="https://www.amazon.com/s?k=lawn+fertilizers&tag=bestshopp0cd1-20">Lawn Fertilizers</a>
-<a class="category" href="https://www.amazon.com/s?k=spa+products&tag=bestshopp0cd1-20">Spa Products</a>
-<a class="category" href="https://www.amazon.com/s?k=window+blinds&tag=bestshopp0cd1-20">Window Blinds</a>
-<a class="category" href="https://www.amazon.com/s?k=trampoline+accessories&tag=bestshopp0cd1-20">Trampoline Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=air+purifiers&tag=bestshopp0cd1-20">Air Purifiers</a>
-<a class="category" href="https://www.amazon.com/s?k=personal+care+electronics&tag=bestshopp0cd1-20">Personal Care Electronics</a>
-<a class="category" href="https://www.amazon.com/s?k=wall+decals&tag=bestshopp0cd1-20">Wall Decals</a>
-<a class="category" href="https://www.amazon.com/s?k=work+gloves&tag=bestshopp0cd1-20">Work Gloves</a>
-<a class="category" href="https://www.amazon.com/s?k=cooling+fans&tag=bestshopp0cd1-20">Cooling Fans</a>
-<a class="category" href="https://www.amazon.com/s?k=solar+lights&tag=bestshopp0cd1-20">Solar Lights</a>
-<a class="category" href="https://www.amazon.com/s?k=pet+grooming&tag=bestshopp0cd1-20">Pet Grooming</a>
-<a class="category" href="https://www.amazon.com/s?k=gaming+chairs&tag=bestshopp0cd1-20">Gaming Chairs</a>
-<a class="category" href="https://www.amazon.com/s?k=water+bottles&tag=bestshopp0cd1-20">Water Bottles</a>
-<a class="category" href="https://www.amazon.com/s?k=coffee+grinders&tag=bestshopp0cd1-20">Coffee Grinders</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+gear&tag=bestshopp0cd1-20">Fitness Gear</a>
-<a class="category" href="https://www.amazon.com/s?k=laptop+bags&tag=bestshopp0cd1-20">Laptop Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchen+gadgets&tag=bestshopp0cd1-20">Kitchen Gadgets</a>
-<a class="category" href="https://www.amazon.com/s?k=home+decor+ideas&tag=bestshopp0cd1-20">Home Decor Ideas</a>
-<a class="category" href="https://www.amazon.com/s?k=baby+clothing&tag=bestshopp0cd1-20">Baby Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=bath+robes&tag=bestshopp0cd1-20">Bath Robes</a>
-<a class="category" href="https://www.amazon.com/s?k=fragrance+gifts&tag=bestshopp0cd1-20">Fragrance Gifts</a>
-<a class="category" href="https://www.amazon.com/s?k=fitness+trackers&tag=bestshopp0cd1-20">Fitness Trackers</a>
-<a class="category" href="https://www.amazon.com/s?k=camping+sleeping+bags&tag=bestshopp0cd1-20">Camping Sleeping Bags</a>
-<a class="category" href="https://www.amazon.com/s?k=wall+art&tag=bestshopp0cd1-20">Wall Art</a>
-<a class="category" href="https://www.amazon.com/s?k=eco+friendly+products&tag=bestshopp0cd1-20">Eco-Friendly Products</a>
-<a class="category" href="https://www.amazon.com/s?k=kids+clothing&tag=bestshopp0cd1-20">Kids Clothing</a>
-<a class="category" href="https://www.amazon.com/s?k=tv+accessories&tag=bestshopp0cd1-20">TV Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=blenders&tag=bestshopp0cd1-20">Blenders</a>
-<a class="category" href="https://www.amazon.com/s?k=dog+food&tag=bestshopp0cd1-20">Dog Food</a>
-<a class="category" href="https://www.amazon.com/s?k=floor+mats&tag=bestshopp0cd1-20">Floor Mats</a>
-<a class="category" href="https://www.amazon.com/s?k=vacuum+cleaners&tag=bestshopp0cd1-20">Vacuum Cleaners</a>
-<a class="category" href="https://www.amazon.com/s?k=coffee+makers&tag=bestshopp0cd1-20">Coffee Makers</a>
-<a class="category" href="https://www.amazon.com/s?k=smart+phones&tag=bestshopp0cd1-20">Smart Phones</a>
-<a class="category" href="https://www.amazon.com/s?k=power+tools&tag=bestshopp0cd1-20">Power Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20">Video Games</a>
-<a class="category" href="https://www.amazon.com/s?k=headphones&tag=bestshopp0cd1-20">Headphones</a>
-<a class="category" href="https://www.amazon.com/s?k=golf+equipment&tag=bestshopp0cd1-20">Golf Equipment</a>
-<a class="category" href="https://www.amazon.com/s?k=furniture+accessories&tag=bestshopp0cd1-20">Furniture Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=pressure+washers&tag=bestshopp0cd1-20">Pressure Washers</a>
-<a class="category" href="https://www.amazon.com/s?k=watches+for+women&tag=bestshopp0cd1-20">Watches for Women</a>
-<a class="category" href="https://www.amazon.com/s?k=watches+for+men&tag=bestshopp0cd1-20">Watches for Men</a>
-<a class="category" href="https://www.amazon.com/s?k=makeup+tools&tag=bestshopp0cd1-20">Makeup Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=cat+food&tag=bestshopp0cd1-20">Cat Food</a>
-<a class="category" href="https://www.amazon.com/s?k=home+improvement+tools&tag=bestshopp0cd1-20">Home Improvement Tools</a>
-<a class="category" href="https://www.amazon.com/s?k=skin+care+products&tag=bestshopp0cd1-20">Skin Care Products</a>
-<a class="category" href="https://www.amazon.com/s?k=travel+accessories&tag=bestshopp0cd1-20">Travel Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=exercise+machines&tag=bestshopp0cd1-20">Exercise Machines</a>
-<a class="category" href="https://www.amazon.com/s?k=pet+accessories&tag=bestshopp0cd1-20">Pet Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=home+theater+system&tag=bestshopp0cd1-20">Home Theater System</a>
-<a class="category" href="https://www.amazon.com/s?k=bicycle+accessories&tag=bestshopp0cd1-20">Bicycle Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=men+accessories&tag=bestshopp0cd1-20">Men Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=winter+jackets&tag=bestshopp0cd1-20">Winter Jackets</a>
-<a class="category" href="https://www.amazon.com/s?k=office+furniture&tag=bestshopp0cd1-20">Office Furniture</a>
-<a class="category" href="https://www.amazon.com/s?k=skateboards&tag=bestshopp0cd1-20">Skateboards</a>
-<a class="category" href="https://www.amazon.com/s?k=clothing+storage&tag=bestshopp0cd1-20">Clothing Storage</a>
-<a class="category" href="https://www.amazon.com/s?k=laptop+accessories&tag=bestshopp0cd1-20">Laptop Accessories</a>
-<a class="category" href="https://www.amazon.com/s?k=health+supplements&tag=bestshopp0cd1-20">Health Supplements</a>
-<a class="category" href="https://www.amazon.com/s?k=lighting+fixtures&tag=bestshopp0cd1-20">Lighting Fixtures</a>
-<a class="category" href="https://www.amazon.com/s?k=air+conditioners&tag=bestshopp0cd1-20">Air Conditioners</a>
-<a class="category" href="https://www.amazon.com/s?k=kitchen+appliances&tag=bestshopp0cd1-20">Kitchen Appliances</a>
+  <div class="categories">
+    <a class="category" href="https://www.amazon.com/s?k=fashion&tag=bestshopp0cd1-20">Fashion</a>
+    <a class="category" href="https://www.amazon.com/s?k=health&tag=bestshopp0cd1-20">Health</a>
+    <a class="category" href="https://www.amazon.com/s?k=technology&tag=bestshopp0cd1-20">Technology</a>
+    <a class="category" href="https://www.amazon.com/s?k=sports&tag=bestshopp0cd1-20">Sports</a>
+    <a class="category" href="https://www.amazon.com/s?k=home&tag=bestshopp0cd1-20">Home</a>
+    <a class="category" href="https://www.amazon.com/s?k=beauty&tag=bestshopp0cd1-20">Beauty</a>
+    <a class="category" href="https://www.amazon.com/s?k=toys&tag=bestshopp0cd1-20">Toys</a>
+    <a class="category" href="https://www.amazon.com/s?k=electronics&tag=bestshopp0cd1-20">Electronics</a>
+    <a class="category" href="https://www.amazon.com/s?k=books&tag=bestshopp0cd1-20">Books</a>
+    <a class="category" href="https://www.amazon.com/s?k=shoes&tag=bestshopp0cd1-20">Shoes</a>
+    <a class="category" href="https://www.amazon.com/s?k=clothing&tag=bestshopp0cd1-20">Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=toys+games&tag=bestshopp0cd1-20">Toys & Games</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+improvement&tag=bestshopp0cd1-20">Home Improvement</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchen+appliances&tag=bestshopp0cd1-20">Kitchen Appliances</a>
+    <a class="category" href="https://www.amazon.com/s?k=gardening&tag=bestshopp0cd1-20">Gardening</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+gear&tag=bestshopp0cd1-20">Outdoor Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=healthcare&tag=bestshopp0cd1-20">Healthcare</a>
+    <a class="category" href="https://www.amazon.com/s?k=toiletries&tag=bestshopp0cd1-20">Toiletries</a>
+    <a class="category" href="https://www.amazon.com/s?k=baby+products&tag=bestshopp0cd1-20">Baby Products</a>
+    <a class="category" href="https://www.amazon.com/s?k=sports+nutrition&tag=bestshopp0cd1-20">Sports Nutrition</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture&tag=bestshopp0cd1-20">Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20">Video Games</a>
+    <a class="category" href="https://www.amazon.com/s?k=automotive&tag=bestshopp0cd1-20">Automotive</a>
+    <a class="category" href="https://www.amazon.com/s?k=music&tag=bestshopp0cd1-20">Music</a>
+    <a class="category" href="https://www.amazon.com/s?k=pet+supplies&tag=bestshopp0cd1-20">Pet Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=toys+and+games&tag=bestshopp0cd1-20">Toys and Games</a>
+    <a class="category" href="https://www.amazon.com/s?k=arts+and+crafts&tag=bestshopp0cd1-20">Arts & Crafts</a>
+    <a class="category" href="https://www.amazon.com/s?k=luggage&tag=bestshopp0cd1-20">Luggage</a>
+    <a class="category" href="https://www.amazon.com/s?k=musical+instruments&tag=bestshopp0cd1-20">Musical Instruments</a>
+    <a class="category" href="https://www.amazon.com/s?k=toys&tag=bestshopp0cd1-20">Toys</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+decor&tag=bestshopp0cd1-20">Home Decor</a>
+    <a class="category" href="https://www.amazon.com/s?k=handmade&tag=bestshopp0cd1-20">Handmade</a>
+    <a class="category" href="https://www.amazon.com/s?k=cosmetics&tag=bestshopp0cd1-20">Cosmetics</a>
+    <a class="category" href="https://www.amazon.com/s?k=software&tag=bestshopp0cd1-20">Software</a>
+    <a class="category" href="https://www.amazon.com/s?k=personal+care&tag=bestshopp0cd1-20">Personal Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=photography&tag=bestshopp0cd1-20">Photography</a>
+    <a class="category" href="https://www.amazon.com/s?k=musical+instruments&tag=bestshopp0cd1-20">Musical Instruments</a>
+    <a class="category" href="https://www.amazon.com/s?k=garden+tools&tag=bestshopp0cd1-20">Garden Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+care+products&tag=bestshopp0cd1-20">Health Care Products</a>
+    <a class="category" href="https://www.amazon.com/s?k=baking&tag=bestshopp0cd1-20">Baking</a>
+    <a class="category" href="https://www.amazon.com/s?k=watch+accessories&tag=bestshopp0cd1-20">Watch Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=luxury+goods&tag=bestshopp0cd1-20">Luxury Goods</a>
+    <a class="category" href="https://www.amazon.com/s?k=craft+supplies&tag=bestshopp0cd1-20">Craft Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=cleaning+supplies&tag=bestshopp0cd1-20">Cleaning Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=party+supply&tag=bestshopp0cd1-20">Party Supply</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+recreation&tag=bestshopp0cd1-20">Outdoor Recreation</a>
+    <a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20">Video Games</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+equipment&tag=bestshopp0cd1-20">Fitness Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+and+kitchen&tag=bestshopp0cd1-20">Home & Kitchen</a>
+    <a class="category" href="https://www.amazon.com/s?k=small+appliances&tag=bestshopp0cd1-20">Small Appliances</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+care&tag=bestshopp0cd1-20">Health Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=skincare&tag=bestshopp0cd1-20">Skincare</a>
+    <a class="category" href="https://www.amazon.com/s?k=antiques&tag=bestshopp0cd1-20">Antiques</a>
+    <a class="category" href="https://www.amazon.com/s?k=batteries&tag=bestshopp0cd1-20">Batteries</a>
+    <a class="category" href="https://www.amazon.com/s?k=musical+accessories&tag=bestshopp0cd1-20">Musical Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=gifts&tag=bestshopp0cd1-20">Gifts</a>
+    <a class="category" href="https://www.amazon.com/s?k=notebooks&tag=bestshopp0cd1-20">Notebooks</a>
+    <a class="category" href="https://www.amazon.com/s?k=jewelry&tag=bestshopp0cd1-20">Jewelry</a>
+    <a class="category" href="https://www.amazon.com/s?k=personalized+gifts&tag=bestshopp0cd1-20">Personalized Gifts</a>
+    <a class="category" href="https://www.amazon.com/s?k=car+accessories&tag=bestshopp0cd1-20">Car Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=travel+gear&tag=bestshopp0cd1-20">Travel Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchenware&tag=bestshopp0cd1-20">Kitchenware</a>
+    <a class="category" href="https://www.amazon.com/s?k=lawn+and+garden&tag=bestshopp0cd1-20">Lawn & Garden</a>
+    <a class="category" href="https://www.amazon.com/s?k=business+and+industrial&tag=bestshopp0cd1-20">Business & Industrial</a>
+    <a class="category" href="https://www.amazon.com/s?k=toys+for+babies&tag=bestshopp0cd1-20">Toys for Babies</a>
+    <a class="category" href="https://www.amazon.com/s?k=high-tech&tag=bestshopp0cd1-20">High-Tech</a>
+    <a class="category" href="https://www.amazon.com/s?k=alcohol&tag=bestshopp0cd1-20">Alcohol</a>
+    <a class="category" href="https://www.amazon.com/s?k=drinks&tag=bestshopp0cd1-20">Drinks</a>
+    <a class="category" href="https://www.amazon.com/s?k=sporting+goods&tag=bestshopp0cd1-20">Sporting Goods</a>
+    <a class="category" href="https://www.amazon.com/s?k=gift+cards&tag=bestshopp0cd1-20">Gift Cards</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+gadgets&tag=bestshopp0cd1-20">Fitness Gadgets</a>
+    <a class="category" href="https://www.amazon.com/s?k=water+sports&tag=bestshopp0cd1-20">Water Sports</a>
+    <a class="category" href="https://www.amazon.com/s?k=cycling&tag=bestshopp0cd1-20">Cycling</a>
+    <a class="category" href="https://www.amazon.com/s?k=camping&tag=bestshopp0cd1-20">Camping</a>
+    <a class="category" href="https://www.amazon.com/s?k=ice+cream+makers&tag=bestshopp0cd1-20">Ice Cream Makers</a>
+    <a class="category" href="https://www.amazon.com/s?k=pets&tag=bestshopp0cd1-20">Pets</a>
+    <a class="category" href="https://www.amazon.com/s?k=farming+supplies&tag=bestshopp0cd1-20">Farming Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=handbags&tag=bestshopp0cd1-20">Handbags</a>
+    <a class="category" href="https://www.amazon.com/s?k=tech+gadgets&tag=bestshopp0cd1-20">Tech Gadgets</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=cosmetic+tools&tag=bestshopp0cd1-20">Cosmetic Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=smartphones&tag=bestshopp0cd1-20">Smartphones</a>
+    <a class="category" href="https://www.amazon.com/s?k=laptops&tag=bestshopp0cd1-20">Laptops</a>
+    <a class="category" href="https://www.amazon.com/s?k=gaming+consoles&tag=bestshopp0cd1-20">Gaming Consoles</a>
+    <a class="category" href="https://www.amazon.com/s?k=computer+components&tag=bestshopp0cd1-20">Computer Components</a>
+    <a class="category" href="https://www.amazon.com/s?k=accessories&tag=bestshopp0cd1-20">Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=lighting&tag=bestshopp0cd1-20">Lighting</a>
+    <a class="category" href="https://www.amazon.com/s?k=decor&tag=bestshopp0cd1-20">Decor</a>
+    <a class="category" href="https://www.amazon.com/s?k=photography+equipment&tag=bestshopp0cd1-20">Photography Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=garden+tools&tag=bestshopp0cd1-20">Garden Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=christmas+decorations&tag=bestshopp0cd1-20">Christmas Decorations</a>
+    <a class="category" href="https://www.amazon.com/s?k=stationery&tag=bestshopp0cd1-20">Stationery</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchen+storage&tag=bestshopp0cd1-20">Kitchen Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=souvenirs&tag=bestshopp0cd1-20">Souvenirs</a>
+    <a class="category" href="https://www.amazon.com/s?k=cleaning+supplies&tag=bestshopp0cd1-20">Cleaning Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=vacuum+cleaners&tag=bestshopp0cd1-20">Vacuum Cleaners</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+improvement&tag=bestshopp0cd1-20">Home Improvement</a>
+    <a class="category" href="https://www.amazon.com/s?k=bedding&tag=bestshopp0cd1-20">Bedding</a>
+    <a class="category" href="https://www.amazon.com/s?k=children+clothes&tag=bestshopp0cd1-20">Children Clothes</a>
+    <a class="category" href="https://www.amazon.com/s?k=bedroom+furniture&tag=bestshopp0cd1-20">Bedroom Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=toiletries&tag=bestshopp0cd1-20">Toiletries</a>
+    <a class="category" href="https://www.amazon.com/s?k=appliances&tag=bestshopp0cd1-20">Appliances</a>
+    <a class="category" href="https://www.amazon.com/s?k=shoes&tag=bestshopp0cd1-20">Shoes</a>
+    <a class="category" href="https://www.amazon.com/s?k=coats&tag=bestshopp0cd1-20">Coats</a>
+    <a class="category" href="https://www.amazon.com/s?k=blenders&tag=bestshopp0cd1-20">Blenders</a>
+    <a class="category" href="https://www.amazon.com/s?k=earphones&tag=bestshopp0cd1-20">Earphones</a>
+    <a class="category" href="https://www.amazon.com/s?k=smart+home&tag=bestshopp0cd1-20">Smart Home</a>
+    <a class="category" href="https://www.amazon.com/s?k=stylish+clothing&tag=bestshopp0cd1-20">Stylish Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=cameras&tag=bestshopp0cd1-20">Cameras</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture+for+living+room&tag=bestshopp0cd1-20">Furniture for Living Room</a>
+    <a class="category" href="https://www.amazon.com/s?k=nutrition&tag=bestshopp0cd1-20">Nutrition</a>
+    <a class="category" href="https://www.amazon.com/s?k=tools&tag=bestshopp0cd1-20">Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+monitoring&tag=bestshopp0cd1-20">Health Monitoring</a>
+    <a class="category" href="https://www.amazon.com/s?k=photography+backdrops&tag=bestshopp0cd1-20">Photography Backdrops</a>
+    <a class="category" href="https://www.amazon.com/s?k=storage+solutions&tag=bestshopp0cd1-20">Storage Solutions</a>
+    <a class="category" href="https://www.amazon.com/s?k=books+for+kids&tag=bestshopp0cd1-20">Books for Kids</a>
+    <a class="category" href="https://www.amazon.com/s?k=gaming+chairs&tag=bestshopp0cd1-20">Gaming Chairs</a>
+    <a class="category" href="https://www.amazon.com/s?k=college+bags&tag=bestshopp0cd1-20">College Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=art+supplies&tag=bestshopp0cd1-20">Art Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+office+furniture&tag=bestshopp0cd1-20">Home Office Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=televisions&tag=bestshopp0cd1-20">Televisions</a>
+    <a class="category" href="https://www.amazon.com/s?k=clocks&tag=bestshopp0cd1-20">Clocks</a>
+    <a class="category" href="https://www.amazon.com/s?k=luggage&tag=bestshopp0cd1-20">Luggage</a>
+    <a class="category" href="https://www.amazon.com/s?k=kids+toys&tag=bestshopp0cd1-20">Kids Toys</a>
+    <a class="category" href="https://www.amazon.com/s?k=smartwatches&tag=bestshopp0cd1-20">Smartwatches</a>
+    <a class="category" href="https://www.amazon.com/s?k=grills&tag=bestshopp0cd1-20">Grills</a>
+    <a class="category" href="https://www.amazon.com/s?k=pantry+essentials&tag=bestshopp0cd1-20">Pantry Essentials</a>
+    <a class="category" href="https://www.amazon.com/s?k=office+supplies&tag=bestshopp0cd1-20">Office Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=air+purifiers&tag=bestshopp0cd1-20">Air Purifiers</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+tracking&tag=bestshopp0cd1-20">Fitness Tracking</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+gear&tag=bestshopp0cd1-20">Outdoor Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=aprons&tag=bestshopp0cd1-20">Aprons</a>
+    <a class="category" href="https://www.amazon.com/s?k=bath+furnishings&tag=bestshopp0cd1-20">Bath Furnishings</a>
+    <a class="category" href="https://www.amazon.com/s?k=water+filters&tag=bestshopp0cd1-20">Water Filters</a>
+    <a class="category" href="https://www.amazon.com/s?k=power+tools&tag=bestshopp0cd1-20">Power Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=auto+repair+tools&tag=bestshopp0cd1-20">Auto Repair Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=baby+monitors&tag=bestshopp0cd1-20">Baby Monitors</a>
+    <a class="category" href="https://www.amazon.com/s?k=business+cards&tag=bestshopp0cd1-20">Business Cards</a>
+    <a class="category" href="https://www.amazon.com/s?k=wristwatches&tag=bestshopp0cd1-20">Wristwatches</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+supplements&tag=bestshopp0cd1-20">Health Supplements</a>
+    <a class="category" href="https://www.amazon.com/s?k=hair+tools&tag=bestshopp0cd1-20">Hair Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=air+conditioners&tag=bestshopp0cd1-20">Air Conditioners</a>
+    <a class="category" href="https://www.amazon.com/s?k=auto+parts&tag=bestshopp0cd1-20">Auto Parts</a>
+    <a class="category" href="https://www.amazon.com/s?k=storage+bins&tag=bestshopp0cd1-20">Storage Bins</a>
+    <a class="category" href="https://www.amazon.com/s?k=toothbrushes&tag=bestshopp0cd1-20">Toothbrushes</a>
+    <a class="category" href="https://www.amazon.com/s?k=cleaning+equipment&tag=bestshopp0cd1-20">Cleaning Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=exercise+balls&tag=bestshopp0cd1-20">Exercise Balls</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+and+wellness&tag=bestshopp0cd1-20">Health & Wellness</a>
+    <a class="category" href="https://www.amazon.com/s?k=vacuum+bags&tag=bestshopp0cd1-20">Vacuum Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=baby+clothes&tag=bestshopp0cd1-20">Baby Clothes</a>
+    <a class="category" href="https://www.amazon.com/s?k=food+storage&tag=bestshopp0cd1-20">Food Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=iron+boards&tag=bestshopp0cd1-20">Iron Boards</a>
+    <a class="category" href="https://www.amazon.com/s?k=backpacks&tag=bestshopp0cd1-20">Backpacks</a>
+    <a class="category" href="https://www.amazon.com/s?k=drone+accessories&tag=bestshopp0cd1-20">Drone Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=car+electronics&tag=bestshopp0cd1-20">Car Electronics</a>
+    <a class="category" href="https://www.amazon.com/s?k=lawn+mowers&tag=bestshopp0cd1-20">Lawn Mowers</a>
+    <a class="category" href="https://www.amazon.com/s?k=power+banks&tag=bestshopp0cd1-20">Power Banks</a>
+    <a class="category" href="https://www.amazon.com/s?k=bedroom+furniture&tag=bestshopp0cd1-20">Bedroom Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=car+maintenance&tag=bestshopp0cd1-20">Car Maintenance</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+clothing&tag=bestshopp0cd1-20">Outdoor Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+play&tag=bestshopp0cd1-20">Outdoor Play</a>
+    <a class="category" href="https://www.amazon.com/s?k=beverages&tag=bestshopp0cd1-20">Beverages</a>
+    <a class="category" href="https://www.amazon.com/s?k=blankets&tag=bestshopp0cd1-20">Blankets</a>
+    <a class="category" href="https://www.amazon.com/s?k=lawn+care&tag=bestshopp0cd1-20">Lawn Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=heating+and+cooling&tag=bestshopp0cd1-20">Heating & Cooling</a>
+    <a class="category" href="https://www.amazon.com/s?k=household+cleaning&tag=bestshopp0cd1-20">Household Cleaning</a>
+    <a class="category" href="https://www.amazon.com/s?k=tools+for+women&tag=bestshopp0cd1-20">Tools for Women</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture+storage&tag=bestshopp0cd1-20">Furniture Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=hair+removal&tag=bestshopp0cd1-20">Hair Removal</a>
+    <a class="category" href="https://www.amazon.com/s?k=women+clothing&tag=bestshopp0cd1-20">Women Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=office+decor&tag=bestshopp0cd1-20">Office Decor</a>
+    <a class="category" href="https://www.amazon.com/s?k=food+delivery+services&tag=bestshopp0cd1-20">Food Delivery Services</a>
+    <a class="category" href="https://www.amazon.com/s?k=coffee+makers&tag=bestshopp0cd1-20">Coffee Makers</a>
+    <a class="category" href="https://www.amazon.com/s?k=appliances+repair&tag=bestshopp0cd1-20">Appliances Repair</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=clothing+accessories&tag=bestshopp0cd1-20">Clothing Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=hair+care&tag=bestshopp0cd1-20">Hair Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture&tag=bestshopp0cd1-20">Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=restaurant+supplies&tag=bestshopp0cd1-20">Restaurant Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=barbecue+grills&tag=bestshopp0cd1-20">Barbecue Grills</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+gear&tag=bestshopp0cd1-20">Outdoor Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=aprons&tag=bestshopp0cd1-20">Aprons</a>
+    <a class="category" href="https://www.amazon.com/s?k=bath+furnishings&tag=bestshopp0cd1-20">Bath Furnishings</a>
+    <a class="category" href="https://www.amazon.com/s?k=water+filtersfatag=bestshopp0cd1-20">Water Filters</a>
+    <a class="category" href="https://www.amazon.com/s?k=power+tools&tag=bestshopp0cd1-20">Power Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=auto+repair+tools&tag=bestshopp0cd1-20">Auto Repair Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=baby+monitors&tag=bestshopp0cd1-20">Baby Monitors</a>
+    <a class="category" href="https://www.amazon.com/s?k=business+cards&tag=bestshopp0cd1-20">Business Cards</a>
+    <a class="category" href="https://www.amazon.com/s?k=wristwatches&tag=bestshopp0cd1-20">Wristwatches</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+supplements&tag=bestshopp0cd1-20">Health Supplements</a>
+    <a class="category" href="https://www.amazon.com/s?k=hair+tools&tag=bestshopp0cd1-20">Hair Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=air+conditioners&tag=bestshopp0cd1-20">Air Conditioners</a>
+    <a class="category" href="https://www.amazon.com/s?k=auto+parts&tag=bestshopp0cd1-20">Auto Parts</a>
+    <a class="category" href="https://www.amazon.com/s?k=storage+bins&tag=bestshopp0cd1-20">Storage Bins</a>
+    <a class="category" href="https://www.amazon.com/s?k=toothbrushes&tag=bestshopp0cd1-20">Toothbrushes</a>
+    <a class="category" href="https://www.amazon.com/s?k=cleaning+equipment&tag=bestshopp0cd1-20">Cleaning Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=exercise+balls&tag=bestshopp0cd1-20">Exercise Balls</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+and+wellness&tag=bestshopp0cd1-20">Health & Wellness</a>
+    <a class="category" href="https://www.amazon.com/s?k=vacuum+bags&tag=bestshopp0cd1-20">Vacuum Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=baby+clothes&tag=bestshopp0cd1-20">Baby Clothes</a>
+    <a class="category" href="https://www.amazon.com/s?k=food+storage&tag=bestshopp0cd1-20">Food Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=iron+boards&tag=bestshopp0cd1-20">Iron Boards</a>
+    <a class="category" href="https://www.amazon.com/s?k=backpacks&tag=bestshopp0cd1-20">Backpacks</a>
+    <a class="category" href="https://www.amazon.com/s?k=drone+accessories&tag=bestshopp0cd1-20">Drone Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=car+electronics&tag=bestshopp0cd1-20">Car Electronics</a>
+    <a class="category" href="https://www.amazon.com/s?k=lawn+mowers&tag=bestshopp0cd1-20">Lawn Mowers</a>
+    <a class="category" href="https://www.amazon.com/s?k=power+banks&tag=bestshopp0cd1-20">Power Banks</a>
+    <a class="category" href="https://www.amazon.com/s?k=bedroom+furniture&tag=bestshopp0cd1-20">Bedroom Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=car+maintenance&tag=bestshopp0cd1-20">Car Maintenance</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+clothing&tag=bestshopp0cd1-20">Outdoor Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+play&tag=bestshopp0cd1-20">Outdoor Play</a>
+    <a class="category" href="https://www.amazon.com/s?k=beverages&tag=bestshopp0cd1-20">Beverages</a>
+    <a class="category" href="https://www.amazon.com/s?k=blankets&tag=bestshopp0cd1-20">Blankets</a>
+    <a class="category" href="https://www.amazon.com/s?k=lawn+care&tag=bestshopp0cd1-20">Lawn Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=heating+and+cooling&tag=bestshopp0cd1-20">Heating & Cooling</a>
+    <a class="category" href="https://www.amazon.com/s?k=household+cleaning&tag=bestshopp0cd1-20">Household Cleaning</a>
+    <a class="category" href="https://www.amazon.com/s?k=tools+for+women&tag=bestshopp0cd1-20">Tools for Women</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture+storage&tag=bestshopp0cd1-20">Furniture Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=hair+removal&tag=bestshopp0cd1-20">Hair Removal</a>
+    <a class="category" href="https://www.amazon.com/s?k=women+clothing&tag=bestshopp0cd1-20">Women Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=office+decor&tag=bestshopp0cd1-20">Office Decor</a>
+    <a class="category" href="https://www.amazon.com/s?k=food+delivery+services&tag=bestshopp0cd1-20">Food Delivery Services</a>
+    <a class="category" href="https://www.amazon.com/s?k=coffee+makers&tag=bestshopp0cd1-20">Coffee Makers</a>
+    <a class="category" href="https://www.amazon.com/s?k=appliances+repair&tag=bestshopp0cd1-20">Appliances Repair</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=clothing+accessories&tag=bestshopp0cd1-20">Clothing Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=hair+care&tag=bestshopp0cd1-20">Hair Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture&tag=bestshopp0cd1-20">Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=restaurant+supplies&tag=bestshopp0cd1-20">Restaurant Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=barbecue+grills&tag=bestshopp0cd1-20">Barbecue Grills</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+improvement&tag=bestshopp0cd1-20">Home Improvement</a>
+    <a class="category" href="https://www.amazon.com/s?k=vacuum+cleaners&tag=bestshopp0cd1-20">Vacuum Cleaners</a>
+    <a class="category" href="https://www.amazon.com/s?k=ceiling+fans&tag=bestshopp0cd1-20">Ceiling Fans</a>
+    <a class="category" href="https://www.amazon.com/s?k=wall+art&tag=bestshopp0cd1-20">Wall Art</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+theater&tag=bestshopp0cd1-20">Home Theater</a>
+    <a class="category" href="https://www.amazon.com/s?k=toy+storage&tag=bestshopp0cd1-20">Toy Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=office+furniture&tag=bestshopp0cd1-20">Office Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=party+supply&tag=bestshopp0cd1-20">Party Supply</a>
+    <a class="category" href="https://www.amazon.com/s?k=travel+gear&tag=bestshopp0cd1-20">Travel Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=desk+lamps&tag=bestshopp0cd1-20">Desk Lamps</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchen+appliances&tag=bestshopp0cd1-20">Kitchen Appliances</a>
+    <a class="category" href="https://www.amazon.com/s?k=light+fixtures&tag=bestshopp0cd1-20">Light Fixtures</a>
+    <a class="category" href="https://www.amazon.com/s?k=personal+care&tag=bestshopp0cd1-20">Personal Care</a>
+    <a class="category" href="https://www.amazon.com/s?k=computer+accessories&tag=bestshopp0cd1-20">Computer Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=bike+accessories&tag=bestshopp0cd1-20">Bike Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=exercise+equipment&tag=bestshopp0cd1-20">Exercise Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+equipment&tag=bestshopp0cd1-20">Fitness Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=garden+tools&tag=bestshopp0cd1-20">Garden Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=skincare+products&tag=bestshopp0cd1-20">Skincare Products</a>
+    <a class="category" href="https://www.amazon.com/s?k=house+cleaning&tag=bestshopp0cd1-20">House Cleaning</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+clothing&tag=bestshopp0cd1-20">Fitness Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=luggage&tag=bestshopp0cd1-20">Luggage</a>
+    <a class="category" href="https://www.amazon.com/s?k=space+saver+bags&tag=bestshopp0cd1-20">Space Saver Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=audio+equipment&tag=bestshopp0cd1-20">Audio Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=solar+panels&tag=bestshopp0cd1-20">Solar Panels</a>
+    <a class="category" href="https://www.amazon.com/s?k=garden+furniture&tag=bestshopp0cd1-20">Garden Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=craft+supplies&tag=bestshopp0cd1-20">Craft Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=camping+gear&tag=bestshopp0cd1-20">Camping Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=swimwear&tag=bestshopp0cd1-20">Swimwear</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchen+tools&tag=bestshopp0cd1-20">Kitchen Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=diapering+supplies&tag=bestshopp0cd1-20">Diapering Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=men+clothing&tag=bestshopp0cd1-20">Men Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=women+shoes&tag=bestshopp0cd1-20">Women Shoes</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture+upholstery&tag=bestshopp0cd1-20">Furniture Upholstery</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+depot+tools&tag=bestshopp0cd1-20">Home Depot Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+lighting&tag=bestshopp0cd1-20">Outdoor Lighting</a>
+    <a class="category" href="https://www.amazon.com/s?k=bathroom+accessories&tag=bestshopp0cd1-20">Bathroom Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=grilling+tools&tag=bestshopp0cd1-20">Grilling Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=handbags&tag=bestshopp0cd1-20">Handbags</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+bands&tag=bestshopp0cd1-20">Fitness Bands</a>
+    <a class="category" href="https://www.amazon.com/s?k=cleaning+supplies&tag=bestshopp0cd1-20">Cleaning Supplies</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+heaters&tag=bestshopp0cd1-20">Outdoor Heaters</a>
+    <a class="category" href="https://www.amazon.com/s?k=sporting+goods&tag=bestshopp0cd1-20">Sporting Goods</a>
+    <a class="category" href="https://www.amazon.com/s?k=biking+gear&tag=bestshopp0cd1-20">Biking Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=desk+organizers&tag=bestshopp0cd1-20">Desk Organizers</a>
+    <a class="category" href="https://www.amazon.com/s?k=vacuum+cleaner+bags&tag=bestshopp0cd1-20">Vacuum Cleaner Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+storage&tag=bestshopp0cd1-20">Outdoor Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=safety+equipment&tag=bestshopp0cd1-20">Safety Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=earphones&tag=bestshopp0cd1-20">Earphones</a>
+    <a class="category" href="https://www.amazon.com/s?k=lawn+fertilizers&tag=bestshopp0cd1-20">Lawn Fertilizers</a>
+    <a class="category" href="https://www.amazon.com/s?k=spa+products&tag=bestshopp0cd1-20">Spa Products</a>
+    <a class="category" href="https://www.amazon.com/s?k=window+blinds&tag=bestshopp0cd1-20">Window Blinds</a>
+    <a class="category" href="https://www.amazon.com/s?k=trampoline+accessories&tag=bestshopp0cd1-20">Trampoline Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=air+purifiers&tag=bestshopp0cd1-20">Air Purifiers</a>
+    <a class="category" href="https://www.amazon.com/s?k=personal+care+electronics&tag=bestshopp0cd1-20">Personal Care Electronics</a>
+    <a class="category" href="https://www.amazon.com/s?k=wall+decals&tag=bestshopp0cd1-20">Wall Decals</a>
+    <a class="category" href="https://www.amazon.com/s?k=work+gloves&tag=bestshopp0cd1-20">Work Gloves</a>
+    <a class="category" href="https://www.amazon.com/s?k=cooling+fans&tag=bestshopp0cd1-20">Cooling Fans</a>
+    <a class="category" href="https://www.amazon.com/s?k=solar+lights&tag=bestshopp0cd1-20">Solar Lights</a>
+    <a class="category" href="https://www.amazon.com/s?k=pet+grooming&tag=bestshopp0cd1-20">Pet Grooming</a>
+    <a class="category" href="https://www.amazon.com/s?k=gaming+chairs&tag=bestshopp0cd1-20">Gaming Chairs</a>
+    <a class="category" href="https://www.amazon.com/s?k=water+bottles&tag=bestshopp0cd1-20">Water Bottles</a>
+    <a class="category" href="https://www.amazon.com/s?k=coffee+grinders&tag=bestshopp0cd1-20">Coffee Grinders</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+gear&tag=bestshopp0cd1-20">Fitness Gear</a>
+    <a class="category" href="https://www.amazon.com/s?k=laptop+bags&tag=bestshopp0cd1-20">Laptop Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchen+gadgets&tag=bestshopp0cd1-20">Kitchen Gadgets</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+decor+ideas&tag=bestshopp0cd1-20">Home Decor Ideas</a>
+    <a class="category" href="https://www.amazon.com/s?k=baby+clothing&tag=bestshopp0cd1-20">Baby Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=bath+robes&tag=bestshopp0cd1-20">Bath Robes</a>
+    <a class="category" href="https://www.amazon.com/s?k=fragrance+gifts&tag=bestshopp0cd1-20">Fragrance Gifts</a>
+    <a class="category" href="https://www.amazon.com/s?k=fitness+trackers&tag=bestshopp0cd1-20">Fitness Trackers</a>
+    <a class="category" href="https://www.amazon.com/s?k=camping+sleeping+bags&tag=bestshopp0cd1-20">Camping Sleeping Bags</a>
+    <a class="category" href="https://www.amazon.com/s?k=wall+art&tag=bestshopp0cd1-20">Wall Art</a>
+    <a class="category" href="https://www.amazon.com/s?k=eco+friendly+products&tag=bestshopp0cd1-20">Eco-Friendly Products</a>
+    <a class="category" href="https://www.amazon.com/s?k=kids+clothing&tag=bestshopp0cd1-20">Kids Clothing</a>
+    <a class="category" href="https://www.amazon.com/s?k=tv+accessories&tag=bestshopp0cd1-20">TV Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=blenders&tag=bestshopp0cd1-20">Blenders</a>
+    <a class="category" href="https://www.amazon.com/s?k=dog+food&tag=bestshopp0cd1-20">Dog Food</a>
+    <a class="category" href="https://www.amazon.com/s?k=floor+mats&tag=bestshopp0cd1-20">Floor Mats</a>
+    <a class="category" href="https://www.amazon.com/s?k=vacuum+cleaners&tag=bestshopp0cd1-20">Vacuum Cleaners</a>
+    <a class="category" href="https://www.amazon.com/s?k=coffee+makers&tag=bestshopp0cd1-20">Coffee Makers</a>
+    <a class="category" href="https://www.amazon.com/s?k=smart+phones&tag=bestshopp0cd1-20">Smart Phones</a>
+    <a class="category" href="https://www.amazon.com/s?k=power+tools&tag=bestshopp0cd1-20">Power Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=video+games&tag=bestshopp0cd1-20">Video Games</a>
+    <a class="category" href="https://www.amazon.com/s?k=headphones&tag=bestshopp0cd1-20">Headphones</a>
+    <a class="category" href="https://www.amazon.com/s?k=golf+equipment&tag=bestshopp0cd1-20">Golf Equipment</a>
+    <a class="category" href="https://www.amazon.com/s?k=furniture+accessories&tag=bestshopp0cd1-20">Furniture Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=pressure+washers&tag=bestshopp0cd1-20">Pressure Washers</a>
+    <a class="category" href="https://www.amazon.com/s?k=watches+for+women&tag=bestshopp0cd1-20">Watches for Women</a>
+    <a class="category" href="https://www.amazon.com/s?k=watches+for+men&tag=bestshopp0cd1-20">Watches for Men</a>
+    <a class="category" href="https://www.amazon.com/s?k=makeup+tools&tag=bestshopp0cd1-20">Makeup Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=cat+food&tag=bestshopp0cd1-20">Cat Food</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+improvement+tools&tag=bestshopp0cd1-20">Home Improvement Tools</a>
+    <a class="category" href="https://www.amazon.com/s?k=skin+care+products&tag=bestshopp0cd1-20">Skin Care Products</a>
+    <a class="category" href="https://www.amazon.com/s?k=travel+accessories&tag=bestshopp0cd1-20">Travel Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=exercise+machines&tag=bestshopp0cd1-20">Exercise Machines</a>
+    <a class="category" href="https://www.amazon.com/s?k=pet+accessories&tag=bestshopp0cd1-20">Pet Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=outdoor+furniture&tag=bestshopp0cd1-20">Outdoor Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=home+theater+system&tag=bestshopp0cd1-20">Home Theater System</a>
+    <a class="category" href="https://www.amazon.com/s?k=bicycle+accessories&tag=bestshopp0cd1-20">Bicycle Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=men+accessories&tag=bestshopp0cd1-20">Men Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=winter+jackets&tag=bestshopp0cd1-20">Winter Jackets</a>
+    <a class="category" href="https://www.amazon.com/s?k=office+furniture&tag=bestshopp0cd1-20">Office Furniture</a>
+    <a class="category" href="https://www.amazon.com/s?k=skateboards&tag=bestshopp0cd1-20">Skateboards</a>
+    <a class="category" href="https://www.amazon.com/s?k=clothing+storage&tag=bestshopp0cd1-20">Clothing Storage</a>
+    <a class="category" href="https://www.amazon.com/s?k=laptop+accessories&tag=bestshopp0cd1-20">Laptop Accessories</a>
+    <a class="category" href="https://www.amazon.com/s?k=health+supplements&tag=bestshopp0cd1-20">Health Supplements</a>
+    <a class="category" href="https://www.amazon.com/s?k=lighting+fixtures&tag=bestshopp0cd1-20">Lighting Fixtures</a>
+    <a class="category" href="https://www.amazon.com/s?k=air+conditioners&tag=bestshopp0cd1-20">Air Conditioners</a>
+    <a class="category" href="https://www.amazon.com/s?k=kitchen+appliances&tag=bestshopp0cd1-20">Kitchen Appliances</a>
+  </div>
 
-</div>
+  <a href="https://wa.me/+93798933435" class="whatsapp-button" aria-label="Contact via WhatsApp"></a>
+  <a href="https://www.facebook.com/profile.php?id=61575762930696" target="_blank" class="fb-button" aria-label="Visit Facebook Page"></a>
 
-<footer>
-  <div class="share-buttons">
-    <h3>Share Our Store</h3>
+  <footer>
+    <div class="share-buttons">
+      <h3>Share Our Store</h3>
       <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https://bestshoppingstore.github.io" target="_blank">Facebook</a>
       <a class="btn tw" href="https://twitter.com/intent/tweet?url=https://bestshoppingstore.github.io" target="_blank">Twitter</a>
       <a class="btn wa" href="https://api.whatsapp.com/send?text=Check%20this%20out:%20https://bestshoppingstore.github.io" target="_blank">WhatsApp</a>
       <a class="btn tg" href="https://t.me/share/url?url=https://bestshoppingstore.github.io" target="_blank">Telegram</a>
-      <a class="btn ig" href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a class="btn ig" href="https://www.instagram.com/share?url=https://bestshoppingstore.github.io" target="_blank">Instagram</a>
       <a class="btn yt" href="https://www.youtube.com" target="_blank">YouTube</a>
       <a class="btn em" href="mailto:?subject=Check%20this%20site&body=Visit%20https://bestshoppingstore.github.io" target="_blank">Email</a>
-     
-  </div>
-</footer>
+    </div>
+  </footer>
 
+  <script>
+    const categories = [
+      "Fashion", "Health", "Technology", "Sports", "Home", "Beauty", "Toys", "Electronics", 
+      "Books", "Shoes", "Clothing", "Toys & Games", "Home Improvement", "Kitchen Appliances", 
+      "Gardening", "Outdoor Gear", "Healthcare", "Toiletries", "Baby Products", "Sports Nutrition", 
+      "Furniture", "Video Games", "Automotive", "Music", "Pet Supplies", "Toys and Games", 
+      "Arts & Crafts", "Luggage", "Musical Instruments", "Home Decor", "Handmade", "Cosmetics", 
+      "Software", "Personal Care", "Photography", "Garden Tools", "Health Care Products", "Baking", 
+      "Watch Accessories", "Luxury Goods", "Craft Supplies", "Cleaning Supplies", "Party Supply", 
+      "Outdoor Recreation", "Fitness Equipment", "Home & Kitchen", "Small Appliances", "Health Care", 
+      "Skincare", "Antiques", "Batteries", "Musical Accessories", "Gifts", "Notebooks", "Jewelry", 
+      "Personalized Gifts", "Car Accessories", "Travel Gear", "Kitchenware", "Lawn & Garden", 
+      "Business & Industrial", "Toys for Babies", "High-Tech", "Alcohol", "Drinks", "Sporting Goods", 
+      "Gift Cards", "Fitness Gadgets", "Water Sports", "Cycling", "Camping", "Ice Cream Makers", 
+      "Pets", "Farming Supplies", "Handbags", "Tech Gadgets", "Outdoor Furniture", "Cosmetic Tools", 
+      "Smartphones", "Laptops", "Gaming Consoles", "Computer Components", "Accessories", "Lighting", 
+      "Decor", "Photography Equipment", "Christmas Decorations", "Stationery", "Kitchen Storage", 
+      "Souvenirs", "Vacuum Cleaners", "Bedding", "Children Clothes", "Bedroom Furniture", 
+      "Appliances", "Coats", "Blenders", "Earphones", "Smart Home", "Stylish Clothing", "Cameras", 
+      "F Wristwatches", "Health Supplements", "Hair Tools", "Air Conditioners", "Auto Parts", 
+      "Storage Bins", "Toothbrushes", "Cleaning Equipment", "Exercise Balls", "Health & Wellness", 
+      "Vacuum Bags", "Baby Clothes", "Food Storage", "Iron Boards", "Backpacks", "Drone Accessories", 
+      "Car Electronics", "Lawn Mowers", "Power Banks", "Car Maintenance", "Outdoor Clothing", 
+      "Outdoor Play", "Beverages", "Blankets", "Lawn Care", "Heating & Cooling", "Household Cleaning", 
+      "Tools for Women", "Furniture Storage", "Hair Removal", "Women Clothing", "Office Decor", 
+      "Food Delivery Services", "Coffee Makers", "Appliances Repair", "Clothing Accessories", 
+      "Hair Care", "Restaurant Supplies", "Barbecue Grills", "Ceiling Fans", "Wall Art", 
+      "Home Theater", "Toy Storage", "Office Furniture", "Travel Gear", "Desk Lamps", 
+      "Light Fixtures", "Computer Accessories", "Bike Accessories", "Exercise Equipment", 
+      "Skincare Products", "House Cleaning", "Fitness Clothing", "Space Saver Bags", 
+      "Audio Equipment", "Solar Panels", "Garden Furniture", "Camping Gear", "Swimwear", 
+      "Kitchen Tools", "Diapering Supplies", "Men Clothing", "Women Shoes", "Furniture Upholstery", 
+      "Home Depot Tools", "Outdoor Lighting", "Bathroom Accessories", "Grilling Tools", 
+      "Fitness Bands", "Outdoor Heaters", "Biking Gear", "Desk Organizers", "Vacuum Cleaner Bags", 
+      "Outdoor Storage", "Safety Equipment", "Lawn Fertilizers", "Spa Products", "Window Blinds", 
+      "Trampoline Accessories", "Personal Care Electronics", "Wall Decals", "Work Gloves", 
+      "Cooling Fans", "Solar Lights", "Pet Grooming", "Water Bottles", "Coffee Grinders", 
+      "Fitness Gear", "Laptop Bags", "Kitchen Gadgets", "Home Decor Ideas", "Baby Clothing", 
+      "Bath Robes", "Fragrance Gifts", "Fitness Trackers", "Camping Sleeping Bags", 
+      "Eco-Friendly Products", "Kids Clothing", "TV Accessories", "Dog Food", "Floor Mats", 
+      "Smart Phones", "Power Tools", "Headphones", "Golf Equipment", "Furniture Accessories", 
+      "Pressure Washers", "Watches for Women", "Watches for Men", "Makeup Tools", "Cat Food", 
+      "Home Improvement Tools", "Skin Care Products", "Travel Accessories", "Exercise Machines", 
+      "Pet Accessories", "Home Theater System", "Bicycle Accessories", "Men Accessories", 
+      "Winter Jackets", "Skateboards", "Clothing Storage", "Laptop Accessories", "Lighting Fixtures"
+    ];
 
-<!-- Search box -->
-<input type="text" id="searchBox" placeholder="Search..." autocomplete="off" onkeyup="showSuggestions(this.value)">
-<div id="suggestions"></div>
+    function showSuggestions(value) {
+      const suggestionBox = document.getElementById("suggestions");
+      suggestionBox.innerHTML = "";
+      if (value.length === 0) {
+        suggestionBox.style.display = "none";
+        return;
+      }
 
-<!-- WhatsApp button -->
-<a href="https://wa.me/+93798933435" class="whatsapp-button"></a>
+      const matches = categories.filter(c =>
+        c.toLowerCase().startsWith(value.toLowerCase())
+      );
 
-<!-- fb button -->
-<a href="https://www.facebook.com/profile.php?id=61575762930696" target="_blank" class="fb-button"></a>
+      if (matches.length === 0) {
+        suggestionBox.style.display = "none";
+        return;
+      }
 
-<footer>
-  <div class="share-buttons">
-    <h3>Share this page:</h3>
-    <a href="#" class="btn fb">Facebook</a>
-    <a href="#" class="btn tw">Twitter</a>
-    <a href="#" class="btn wa">WhatsApp</a>
-    <a href="#" class="btn tg">Telegram</a>
-    <a href="#" class="btn ig">Instagram</a>
-    <a href="#" class="btn yt">YouTube</a>
-    <a href="#" class="btn em">Email</a>
-  </div>
-</footer>
-
-<script>
-
-  function showSuggestions(value) {
-    const suggestionBox = document.getElementById("suggestions");
-    suggestionBox.innerHTML = "";
-    if (value.length === 0) {
-      suggestionBox.style.display = "none";
-      return;
-    }
-
-    const matches = categories.filter(c =>
-      c.toLowerCase().startsWith(value.toLowerCase())
-    );
-
-    if (matches.length === 0) {
-      suggestionBox.style.display = "none";
-      return;
-    }
-
-    matches.forEach(item => {
-      const div = document.createElement("div");
-      div.textContent = item;
-      div.onclick = () => {
-        document.getElementById("searchBox").value = item;
+      matches.forEach(item => {
+        const div = document.createElement("div");
+        div.textContent = item;
+        div.onclick = () => {
+          document.getElementById("searchBox").value = item;
         suggestionBox.style.display = "none";
         window.location.href = `https://www.amazon.com/s?k=${item}&tag=bestshopp0cd1-20`;
       };
