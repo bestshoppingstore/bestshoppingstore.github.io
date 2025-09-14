@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://trackui.recomaze.ai/v2/dist/load.min.js?client_id=RECOMAZE-2ytQsGHmHVRM0l9c8y4gkD4Zs4u2w9FKTwGrufdNGfL9guQ2tdBnf3E3jdahMf" ></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shop a wide range of products at Best Shopping Store, powered by Amazon. Discover fashion, electronics, home goods, and more at unbeatable prices." />
-  <meta name="keywords" content="online shopping, Amazon affiliate, fashion, electronics, home goods, Best Shopping Store, Alham Afghan, health, beauty, technology, sports" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Best Shopping Store Team" />
-  <!-- Open Graph Tags for Social Media -->
-  <meta property="og:title" content="Best Shopping Store - Your Trusted Marketplace" />
-  <meta property="og:description" content="Explore fashion, electronics, home goods, and more at Best Shopping Store, powered by Amazon." />
-  <meta property="og:image" content="https://bestshoppingstore.github.io/images/logo.png" />
-  <meta property="og:url" content="https://bestshoppingstore.github.io" />
-  <meta property="og:type" content="website" />
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Best Shopping Store - Your Trusted Marketplace" />
-  <meta name="twitter:description" content="Explore fashion, electronics, home goods, and more at Best Shopping Store, powered by Amazon." />
-  <meta name="twitter:image" content="https://bestshoppingstore.github.io/images/logo.png" />
-  <title>Best Shopping Store - Powered by Amazon</title>
-  <link rel="canonical" href="https://bestshoppingstore.github.io" />
-  <link rel="sitemap" href="https://bestshoppingstore.github.io/sitemap.xml" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Shopping Store</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -31,20 +13,23 @@
       text-align: center;
       line-height: 1.6;
     }
+
     header {
       background-color: #0073e6;
       color: white;
       padding: 15px;
-      height: auto;
     }
+
     h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     p.subtitle {
       font-size: 1.2rem;
       margin: 10px 0;
     }
+
     .intro {
       margin: 20px auto;
       font-weight: bold;
@@ -52,6 +37,7 @@
       color: #333;
       max-width: 800px;
     }
+
     .categories {
       display: flex;
       flex-wrap: wrap;
@@ -59,6 +45,7 @@
       margin: 30px auto;
       max-width: 1200px;
     }
+
     .category {
       background: white;
       border-radius: 10px;
@@ -71,58 +58,46 @@
       width: 180px;
       transition: all 0.3s ease;
     }
+
     .category:hover {
       background-color: #dbeeff;
       transform: scale(1.05);
       color: #000;
     }
-    .whatsapp-button, .fb-button {
-      position: fixed;
-      bottom: 20px;
-      width: 60px;
-      height: 60px;
-      background-size: cover;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
+
+    #searchBox {
+      margin: 40px auto;
+      padding: 15px;  
+      font-size: 1rem; 
+      width: 500px; 
+      border: 2px solid #aaa;
+      border-radius: 8px;   
     }
-    .whatsapp-button {
-      right: 20px;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
-  
-#searchBox {
-  margin: 40px auto;
-  padding: 25px;  
-  font-size: 1rem; 
-  width: 500px; 
-  border: 2px solid #aaa;
-  border-radius: 8px;   
-}
 
-#suggestions {
-  border: 2px solid #aaa;
-  max-height: 250px;
-  overflow-y: auto;
-  display: none;
-  position: absolute;
-  background: #fff;
-  z-index: 999;
-  width: 500px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: left;
-  font-size: 1rem;
-}
+    #suggestions {
+      border: 2px solid #aaa;
+      max-height: 250px;
+      overflow-y: auto;
+      display: none;
+      position: absolute;
+      background: #fff;
+      z-index: 999;
+      width: 500px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      text-align: left;
+      font-size: 1rem;
+    }
 
-#suggestions div {
-  padding: 15px;  
-  cursor: pointer;
-}
+    #suggestions div {
+      padding: 15px;  
+      cursor: pointer;
+    }
 
-#suggestions div:hover {
-  background-color: #f0f0f0;
-}
+    #suggestions div:hover {
+      background-color: #f0f0f0;
+    }
 
     footer {
       background-color: #0073e6;
@@ -130,38 +105,7 @@
       padding: 20px;
       margin-top: 20px;
     }
-    .share-buttons {
-      margin-top: 20px;
-    }
-    .share-buttons h3 {
-      color: white;
-      margin-bottom: 15px;
-      font-size: 1.5rem;
-    }
-    .share-buttons .btn {
-      display: inline-block;
-      margin: 5px;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-      transition: background 0.3s ease;
-    }
-    .fb { background: #3b5998; }
-    .fb:hover { background: #2d4373; }
-    .tw { background: #1da1f2; }
-    .tw:hover { background: #0d95e8; }
-    .wa { background: #25D366; }
-    .wa:hover { background: #1ebe57; }
-    .tg { background: #0088cc; }
-    .tg:hover { background: #0077b5; }
-    .ig { background: #C13584; }
-    .ig:hover { background: #962c6b; }
-    .yt { background: #FF0000; }
-    .yt:hover { background: #e60000; }
-    .em { background: #6c757d; }
-    .em:hover { background: #5a6268; }
+
     /* Responsive Design */
     @media (max-width: 768px) {
       h1 { font-size: 1.8rem; }
@@ -170,10 +114,27 @@
       #searchBox { width: 80%; }
       #suggestions { width: 80%; }
     }
+
     @media (max-width: 480px) {
       .category { width: 100%; margin: 10px 0; }
-      .whatsapp-button, .fb-button { width: 50px; height: 50px; }
     }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .free-trial { background: #28a745; }
+    .free-trial:hover { background: #218838; }
+    .paid { background: #ff9800; }
+    .paid:hover { background: #e68900; }
+    .redeem { background: #0073e6; }
+    .redeem:hover { background: #005bb5; }
   </style>
 </head>
 <body>
@@ -187,9 +148,17 @@
       Explore a wide range of products on our page. From fashion to electronics, find everything you need with the reliability of Amazon. If you encounter any issues, we're here to assist you!
     </section>
 
-    <input type="text" id="searchBox" placeholder="Search products..." autocomplete="off" aria-label="Search products" onkeyup="showSuggestions(this.value)">
-    <div id="suggestions" role="listbox"></div>
+    <input type="text" id="searchBox" placeholder="Search products..." autocomplete="off">
+    <div id="suggestions"></div>
 
+    <!-- Audible Affiliate Section -->
+    <section class="audible">
+      <h2>🎧 Audible Deals – Earn While You Listen</h2>
+      <p>Join Audible today and unlock amazing audiobooks. Choose the best option for you:</p>
+      <a href="https://www.amazon.com/audible?tag=bestshopp0cd1-20" class="btn free-trial">Free Trial Signup $5</a>
+      <a href="https://www.amazon.com/hz/audible/mlp/membership?tag=bestshopp0cd1-20" class="btn paid">Paid Membership $10</a>
+      <a href="https://www.amazon.com/dp/B09Q7X1VJ7?tag=bestshopp0cd1-20" class="btn redeem">Redeem Audiobook $1</a>
+    </section>
     <section class="categories" aria-label="Product Categories">
       <a class="category" href="https://www.amazon.com/s?k=fashion&tag=bestshopp0cd1-20" rel="nofollow">Fashion</a>
       <a class="category" href="https://www.amazon.com/s?k=health&tag=bestshopp0cd1-20" rel="nofollow">Health</a>
@@ -442,11 +411,6 @@
       <a class="category" href="https://www.amazon.com/s?k=lighting+fixtures&tag=bestshopp0cd1-20" rel="nofollow">Lighting Fixtures</a>
     </section>
   </main>
-
-  <a href="https://wa.me/+93798933435" class="whatsapp-button" aria-label="Contact us on WhatsApp" rel="nofollow">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" style="display:none;">
-  </a>
-
   <footer>
     <div class="share-buttons">
       <h3>Share Our Store</h3>
