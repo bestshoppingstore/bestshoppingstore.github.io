@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://bestshoppingstore.github.io/sitemap.xml
